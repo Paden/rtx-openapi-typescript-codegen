@@ -9,4 +9,11 @@ export function registerHandlebarHelpers(): void {
         // @ts-ignore
         return a !== b ? options.fn(this) : options.inverse(this);
     });
+
+    Handlebars.registerHelper('enumName', function(str: string, options: Handlebars.HelperOptions): string {
+        const enumNameStartCase = str.charAt(0).toUpperCase() + str.substr(1);
+        const enumName = enumNameStartCase + 'Enum';
+
+        return enumName;
+    });
 }

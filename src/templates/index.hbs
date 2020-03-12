@@ -11,7 +11,8 @@ export { OpenAPI } from './core/OpenAPI';
 {{#if models}}
 
 {{#each models}}
-export { {{{this}}} } from './models/{{{this}}}';
+{{!-- export { {{{this}}} } from './models/{{{this}}}'; --}}
+export * from './models/{{{this}}}';
 {{/each}}
 {{/if}}
 {{#if exportSchemas}}

@@ -1,6 +1,6 @@
 {{~#if parent~}}
 {{!-- {{{parent}}}.{{{name}}}{{>isNullable}} --}}
-{{enumName name}}{{>isNullable}}
+{{{parent}}}{{enumName name}}{{>isNullable}}
 {{~else~}}
 (
 {{~#each enum~}}

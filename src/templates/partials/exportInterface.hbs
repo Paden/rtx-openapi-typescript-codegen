@@ -21,7 +21,7 @@ export interface {{{name}}}{{>extends}} {
     * {{{description}}}
     */
 {{/if}}
-export enum {{enumName name}} {
+export enum {{../name}}{{enumName name}} {
     {{#each enum}}
     {{{name}}} = {{{value}}},
     {{/each}}

@@ -13,6 +13,10 @@ import { Templates } from './readHandlebarsTemplates';
  */
 export function writeClientModels(models: Model[], templates: Templates, outputPath: string): void {
     models.forEach(model => {
+        if (model.name === 'any') {
+            return;
+        }
+
         const file = path.resolve(outputPath, `${model.name}.ts`);
         const templateResult = templates.model(model);
         fs.writeFileSync(file, format(templateResult));

@@ -182,7 +182,12 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
 
     // If the schema has a type than it can be a basic or generic type.
     if (definition.type) {
-        const definitionType = getType(definition.type);
+        let definitionType = getType(definition.type);
+
+        if (definition.format === 'date' || definition.format === 'date-time') {
+            definitionType = getType(definition.format);
+        }
+
         model.export = 'generic';
         model.type = definitionType.type;
         model.base = definitionType.base;

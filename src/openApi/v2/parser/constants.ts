@@ -5,6 +5,7 @@ export enum PrimaryType {
     BOOLEAN = 'boolean',
     NUMBER = 'number',
     STRING = 'string',
+    DATE = 'Date',
     VOID = 'void',
     NULL = 'null',
 }
@@ -26,8 +27,8 @@ export const TYPE_MAPPINGS = new Map<string, PrimaryType>([
     ['long', PrimaryType.NUMBER],
     ['number', PrimaryType.NUMBER],
     ['char', PrimaryType.STRING],
-    ['date', PrimaryType.STRING],
-    ['date-time', PrimaryType.STRING],
+    ['date', PrimaryType.DATE],
+    ['date-time', PrimaryType.DATE],
     ['password', PrimaryType.STRING],
     ['string', PrimaryType.STRING],
     ['void', PrimaryType.VOID],

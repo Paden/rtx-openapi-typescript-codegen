@@ -28,7 +28,7 @@ export const TYPE_MAPPINGS = new Map<string, PrimaryType>([
     ['number', PrimaryType.NUMBER],
     ['char', PrimaryType.STRING],
     ['date', PrimaryType.DATE],
-    ['date-time', PrimaryType.STRING],
+    ['date-time', PrimaryType.DATE],
     ['password', PrimaryType.STRING],
     ['string', PrimaryType.STRING],
     ['void', PrimaryType.VOID],

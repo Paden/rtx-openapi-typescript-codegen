@@ -15,8 +15,6 @@ export interface {{{name}}}{{>extends}} {
 }
 {{#if enums}}
 
-{{!-- export namespace {{{name}}} { --}}
-
 {{#each enums}}
 {{#if description}}
 /**
@@ -25,11 +23,9 @@ export interface {{{name}}}{{>extends}} {
 {{/if}}
 export enum {{enumName name}} {
     {{#each enum}}
-    {{name}}} = {{{value}}},
+    {{{name}}} = {{{value}}},
     {{/each}}
 }
 
 {{/each}}
-
-{{!-- } --}}
 {{/if}}

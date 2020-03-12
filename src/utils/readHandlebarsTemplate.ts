@@ -19,6 +19,7 @@ export function readHandlebarsTemplate(filePath: string): Handlebars.TemplateDel
         knownHelpers: {
             equals: true,
             notEquals: true,
+            enumName: true,
         },
     });
 }

@@ -1,6 +1,6 @@
 {
     "name": "rtx-openapi-typescript-codegen",
-    "version": "0.1.33",
+    "version": "0.1.34",
     "description": "NodeJS library that generates Typescript or Javascript clients based on the OpenAPI specification.",
     "author": "Paden Portillo",
     "homepage": "https://github.com/Paden/rtx-openapi-typescript-codegen",

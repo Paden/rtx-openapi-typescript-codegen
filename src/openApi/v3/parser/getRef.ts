@@ -20,6 +20,13 @@ export function getRef<T>(openApi: OpenApi, item: T & OpenApiReference): T {
                 throw new Error(`Could not find reference: "${item.$ref}"`);
             }
         });
+
+        //Get name from parameter if not in $ref
+        if (!result.name && 'name' in item) {
+            //@ts-ignore
+            result.name = item.name;
+        }
+
         return result as T;
     }
     return item as T;

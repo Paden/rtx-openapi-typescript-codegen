@@ -49,7 +49,7 @@
     "scripts": {
         "clean": "rimraf ./dist ./test/result ./coverage",
         "build": "tsc",
-        "publish": "npm run build && npm publish",
+        "pushVersion": "npm run build && npm publish",
         "run": "tsc && node ./test/index.js",
         "test": "tsc && jest",
         "test:update": "tsc && jest --updateSnapshot",

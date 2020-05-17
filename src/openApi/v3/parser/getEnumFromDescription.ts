@@ -9,7 +9,7 @@ export function getEnumFromDescription(description: string): Enum[] {
         if (matches) {
             // Grab the values from the description
             const symbols: Enum[] = [];
-            matches.forEach(match => {
+            matches.forEach((match) => {
                 const name = match.split('=')[0];
                 const value = parseInt(match.split('=')[1].replace(/[^0-9]/g, ''));
                 if (name && Number.isInteger(value)) {
@@ -24,7 +24,7 @@ export function getEnumFromDescription(description: string): Enum[] {
 
             // Filter out any duplicate names
             return symbols.filter((symbol, index, arr) => {
-                return arr.map(item => item.name).indexOf(symbol.name) === index;
+                return arr.map((item) => item.name).indexOf(symbol.name) === index;
             });
         }
     }

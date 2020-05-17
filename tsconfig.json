@@ -19,7 +19,8 @@
         "strict": true,
         "strictNullChecks": true,
         "importHelpers": false,
-        "forceConsistentCasingInFileNames": true
+        "forceConsistentCasingInFileNames": true,
+        "esModuleInterop": true
     },
 
     "include": [

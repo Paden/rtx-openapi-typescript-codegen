@@ -12,7 +12,7 @@ import { Templates } from './readHandlebarsTemplates';
  * @param outputPath Directory to write the generated files to.
  */
 export function writeClientSchemas(models: Model[], templates: Templates, outputPath: string): void {
-    models.forEach(model => {
+    models.forEach((model) => {
         const file = path.resolve(outputPath, `$${model.name}.ts`);
         const templateResult = templates.schema(model);
         fs.writeFileSync(file, format(templateResult));

@@ -126,7 +126,7 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
         model.base = PrimaryType.OBJECT;
 
         if (definition.allOf) {
-            definition.allOf.forEach(parent => {
+            definition.allOf.forEach((parent) => {
                 if (parent.$ref) {
                     const parentRef = getType(parent.$ref);
                     model.extends.push(parentRef.base);
@@ -134,7 +134,7 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
                 }
                 if (parent.type === 'object' && parent.properties) {
                     const properties = getModelProperties(openApi, parent);
-                    properties.forEach(property => {
+                    properties.forEach((property) => {
                         model.properties.push(property);
                         model.imports.push(...property.imports);
                         if (property.export === 'enum') {
@@ -147,7 +147,7 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
 
         if (definition.properties) {
             const properties = getModelProperties(openApi, definition);
-            properties.forEach(property => {
+            properties.forEach((property) => {
                 model.properties.push(property);
                 model.imports.push(...property.imports);
                 if (property.export === 'enum') {

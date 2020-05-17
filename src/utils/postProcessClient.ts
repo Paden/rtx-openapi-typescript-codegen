@@ -10,7 +10,7 @@ import { postProcessService } from './postProcessService';
 export function postProcessClient(client: Client, useUnionTypes: boolean): Client {
     return {
         ...client,
-        models: client.models.map(model => postProcessModel(model, client, useUnionTypes)),
-        services: client.services.map(service => postProcessService(service, client, useUnionTypes)),
+        models: client.models.map((model) => postProcessModel(model, client, useUnionTypes)),
+        services: client.services.map((service) => postProcessService(service, client, useUnionTypes)),
     };
 }

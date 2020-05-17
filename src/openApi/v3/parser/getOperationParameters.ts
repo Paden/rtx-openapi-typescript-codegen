@@ -18,7 +18,7 @@ export function getOperationParameters(openApi: OpenApi, parameters: OpenApiPara
     };
 
     // Iterate over the parameters
-    parameters.forEach(parameterOrReference => {
+    parameters.forEach((parameterOrReference) => {
         const parameter = getRef<OpenApiParameter>(openApi, parameterOrReference);
         const param = getOperationParameter(openApi, parameter);
 

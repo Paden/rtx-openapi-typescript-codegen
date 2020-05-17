@@ -13,7 +13,7 @@ import { Templates } from './readHandlebarsTemplates';
  * @param useOptions Use options or arguments functions.
  */
 export function writeClientServices(services: Service[], templates: Templates, outputPath: string, useOptions: boolean): void {
-    services.forEach(service => {
+    services.forEach((service) => {
         const file = path.resolve(outputPath, `${service.name}.ts`);
         const templateResult = templates.service({
             ...service,

@@ -56,7 +56,7 @@ export function readHandlebarsTemplates(): Templates {
         'typeReference.hbs',
     ];
 
-    partials.forEach(partial => {
+    partials.forEach((partial) => {
         const templatePath = resolveTemplate(`partials/${partial}`);
         const templateName = path.basename(partial, '.hbs');
         const template = readHandlebarsTemplate(templatePath);

@@ -10,5 +10,5 @@ export function postProcessModelImports(model: Model): string[] {
     return model.imports
         .filter(unique)
         .sort(sort)
-        .filter(name => model.name !== name);
+        .filter((name) => model.name !== name);
 }

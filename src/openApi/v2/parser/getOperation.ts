@@ -56,7 +56,7 @@ export function getOperation(openApi: OpenApi, url: string, method: string, op: 
         const operationResponses = getOperationResponses(openApi, op.responses);
         const operationResults = getOperationResults(operationResponses);
         operation.errors = getOperationErrors(operationResponses);
-        operationResults.forEach(operationResult => {
+        operationResults.forEach((operationResult) => {
             operation.results.push(operationResult);
             operation.imports.push(...operationResult.imports);
         });

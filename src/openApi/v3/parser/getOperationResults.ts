@@ -13,7 +13,7 @@ function areEqual(a: Model, b: Model): boolean {
 export function getOperationResults(operationResponses: OperationResponse[]): OperationResponse[] {
     const operationResults: OperationResponse[] = [];
 
-    operationResponses.forEach(operationResponse => {
+    operationResponses.forEach((operationResponse) => {
         if (operationResponse.code && operationResponse.code >= 200 && operationResponse.code < 300) {
             operationResults.push(operationResponse);
         }
@@ -44,7 +44,7 @@ export function getOperationResults(operationResponses: OperationResponse[]): Op
 
     return operationResults.filter((operationResult, index, arr) => {
         return (
-            arr.findIndex(item => {
+            arr.findIndex((item) => {
                 return areEqual(item, operationResult);
             }) === index
         );

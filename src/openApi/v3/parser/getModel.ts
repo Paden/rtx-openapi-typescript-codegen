@@ -116,12 +116,12 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
 
     if (definition.anyOf && definition.anyOf.length) {
         model.export = 'generic';
-        const compositionTypes = definition.anyOf.filter(type => type.$ref).map(type => getType(type.$ref));
+        const compositionTypes = definition.anyOf.filter((type) => type.$ref).map((type) => getType(type.$ref));
         const composition = compositionTypes
-            .map(type => type.type)
+            .map((type) => type.type)
             .sort()
             .join(' | ');
-        model.imports.push(...compositionTypes.map(type => type.base));
+        model.imports.push(...compositionTypes.map((type) => type.base));
         model.type = composition;
         model.base = composition;
         return model;
@@ -129,12 +129,12 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
 
     if (definition.oneOf && definition.oneOf.length) {
         model.export = 'generic';
-        const compositionTypes = definition.oneOf.filter(type => type.$ref).map(type => getType(type.$ref));
+        const compositionTypes = definition.oneOf.filter((type) => type.$ref).map((type) => getType(type.$ref));
         const composition = compositionTypes
-            .map(type => type.type)
+            .map((type) => type.type)
             .sort()
             .join(' | ');
-        model.imports.push(...compositionTypes.map(type => type.base));
+        model.imports.push(...compositionTypes.map((type) => type.base));
         model.type = composition;
         model.base = composition;
         return model;
@@ -147,7 +147,7 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
         model.default = getModelDefault(definition, model);
 
         if (definition.allOf) {
-            definition.allOf.forEach(parent => {
+            definition.allOf.forEach((parent) => {
                 if (parent.$ref) {
                     const parentRef = getType(parent.$ref);
                     model.extends.push(parentRef.base);
@@ -155,7 +155,7 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
                 }
                 if (parent.type === 'object' && parent.properties) {
                     const properties = getModelProperties(openApi, parent);
-                    properties.forEach(property => {
+                    properties.forEach((property) => {
                         model.properties.push(property);
                         model.imports.push(...property.imports);
                         if (property.export === 'enum') {
@@ -168,7 +168,7 @@ export function getModel(openApi: OpenApi, definition: OpenApiSchema, isDefiniti
 
         if (definition.properties) {
             const properties = getModelProperties(openApi, definition);
-            properties.forEach(property => {
+            properties.forEach((property) => {
                 model.properties.push(property);
                 model.imports.push(...property.imports);
                 if (property.export === 'enum') {

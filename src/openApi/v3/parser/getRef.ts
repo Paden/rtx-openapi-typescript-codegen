@@ -8,7 +8,7 @@ export function getRef<T>(openApi: OpenApi, item: T & OpenApiReference): T {
         const paths = item.$ref
             .replace(/^#/g, '')
             .split('/')
-            .filter(item => item);
+            .filter((item) => item);
 
         // Try to find the reference by walking down the path,
         // if we cannot find it, then we throw an error.

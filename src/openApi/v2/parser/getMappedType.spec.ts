@@ -4,8 +4,8 @@ describe('getMappedType', () => {
     it('should map types to the basics', () => {
         expect(getMappedType('File')).toEqual('File');
         expect(getMappedType('String')).toEqual('string');
-        expect(getMappedType('date')).toEqual('string');
-        expect(getMappedType('date-time')).toEqual('string');
+        expect(getMappedType('date')).toEqual('Date');
+        expect(getMappedType('date-time')).toEqual('Date');
         expect(getMappedType('float')).toEqual('number');
         expect(getMappedType('double')).toEqual('number');
         expect(getMappedType('short')).toEqual('number');

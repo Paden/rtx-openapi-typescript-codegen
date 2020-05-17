@@ -12,7 +12,7 @@ import { Templates } from './readHandlebarsTemplates';
  * @param outputPath Directory to write the generated files to.
  */
 export function writeClientModels(models: Model[], templates: Templates, outputPath: string): void {
-    models.forEach(model => {
+    models.forEach((model) => {
         if (model.name === 'any') {
             return;
         }

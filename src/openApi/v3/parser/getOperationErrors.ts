@@ -3,10 +3,10 @@ import { OperationResponse } from '../../../client/interfaces/OperationResponse'
 
 export function getOperationErrors(operationResponses: OperationResponse[]): OperationError[] {
     return operationResponses
-        .filter(operationResponse => {
+        .filter((operationResponse) => {
             return operationResponse.code >= 300 && operationResponse.description;
         })
-        .map(response => ({
+        .map((response) => ({
             code: response.code,
             description: response.description!,
         }));

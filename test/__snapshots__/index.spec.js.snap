@@ -1447,6 +1447,8 @@ export const $ModelLink = {
             type: 'string',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1469,6 +1471,8 @@ export const $ModelThatExtends = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1493,6 +1497,8 @@ export const $ModelThatExtendsExtends = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1515,6 +1521,8 @@ export const $ModelWithArray = {
             type: 'Array',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1531,6 +1539,8 @@ export const $ModelWithBoolean = {
             type: 'boolean',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1547,6 +1557,8 @@ export const $ModelWithCircularReference = {
             type: 'ModelWithCircularReference',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1563,6 +1575,8 @@ export const $ModelWithDictionary = {
             type: 'Dictionary',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1585,6 +1599,8 @@ export const $ModelWithDuplicateImports = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1601,6 +1617,8 @@ export const $ModelWithDuplicateProperties = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1617,6 +1635,8 @@ export const $ModelWithEnum = {
             type: 'Enum',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1633,6 +1653,8 @@ export const $ModelWithEnumFromDescription = {
             type: 'Enum',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1649,6 +1671,8 @@ export const $ModelWithInteger = {
             type: 'number',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1665,6 +1689,8 @@ export const $ModelWithLink = {
             type: 'ModelLink',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1690,6 +1716,8 @@ export const $ModelWithNestedEnums = {
             type: 'Array',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1720,6 +1748,8 @@ export const $ModelWithNestedProperties = {
             isRequired: true,
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1742,6 +1772,8 @@ export const $ModelWithOrderedProperties = {
             type: 'string',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1775,6 +1807,8 @@ export const $ModelWithPattern = {
             format: 'date-time',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1809,6 +1843,8 @@ export const $ModelWithProperties = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1825,6 +1861,8 @@ export const $ModelWithReference = {
             type: 'ModelWithProperties',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -1841,6 +1879,8 @@ export const $ModelWithString = {
             type: 'string',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -3983,6 +4023,8 @@ export const $ModelLink = {
             type: 'string',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4005,6 +4047,8 @@ export const $ModelThatExtends = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4029,6 +4073,8 @@ export const $ModelThatExtendsExtends = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4045,6 +4091,8 @@ export const $ModelWithAnyOf = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithArray | ModelWithDictionary | ModelWithEnum | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4067,6 +4115,8 @@ export const $ModelWithArray = {
             type: 'Array',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4083,6 +4133,8 @@ export const $ModelWithBoolean = {
             type: 'boolean',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4099,6 +4151,8 @@ export const $ModelWithCircularReference = {
             type: 'ModelWithCircularReference',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4115,6 +4169,8 @@ export const $ModelWithDictionary = {
             type: 'Dictionary',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4137,6 +4193,8 @@ export const $ModelWithDuplicateImports = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4153,6 +4211,8 @@ export const $ModelWithDuplicateProperties = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4169,6 +4229,8 @@ export const $ModelWithEnum = {
             type: 'Enum',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4185,6 +4247,8 @@ export const $ModelWithEnumFromDescription = {
             type: 'Enum',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4201,6 +4265,8 @@ export const $ModelWithInteger = {
             type: 'number',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4217,6 +4283,8 @@ export const $ModelWithLink = {
             type: 'ModelLink',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4242,6 +4310,8 @@ export const $ModelWithNestedEnums = {
             type: 'Array',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4275,6 +4345,8 @@ export const $ModelWithNestedProperties = {
             isNullable: true,
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4291,6 +4363,8 @@ export const $ModelWithOneOf = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithArray | ModelWithDictionary | ModelWithEnum | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4313,6 +4387,8 @@ export const $ModelWithOrderedProperties = {
             type: 'string',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4346,6 +4422,8 @@ export const $ModelWithPattern = {
             format: 'date-time',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4385,6 +4463,8 @@ export const $ModelWithProperties = {
             type: 'ModelThatExtends | ModelThatExtendsExtends | ModelWithString',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4401,6 +4481,8 @@ export const $ModelWithReference = {
             type: 'ModelWithProperties',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
@@ -4417,6 +4499,8 @@ export const $ModelWithString = {
             type: 'string',
         },
     },
+    isReadOnly: false,
+    isRequired: false,
 };"
 `;
 
